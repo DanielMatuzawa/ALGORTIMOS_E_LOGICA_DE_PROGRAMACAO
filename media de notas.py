@@ -1,19 +1,46 @@
 print("===BOLETIM DE NOTAS===")
 
-nome = input("\nInsira seu nome: ")
+while True:
+        nome = input("\nInsira seu nome: ")
+        if nome != "":
+            break
+        else:
+            print("Voce precisar digitar seu nome!")
+
+
 curso = input("\nInsira seu curso: ")
 disciplina = input("\nInsira sua disciplina: ")
 semestre = input("\nInsira seu semestre: ")
-nota1 = int(input("\ninsira sua primeira nota: "))
-nota2 = int(input("\ninsira sua segunda nota: "))
+
+
+###SISTEMAS DE NOTAS### 
+
+while True:
+    try:
+        nota1 = int(input("\ninsira sua primeira nota: "))
+        if 0 <= nota1 <=100:
+            break
+        else: print("A nota deve estar entre 0 e 100")
+    except ValueError:
+        print("Digite uma nota válida!")
+      
+while True:
+    try:
+        nota2 = int(input("\ninsira sua primeira nota: "))
+        if 0 <= nota2 <=100:
+            break
+        else:
+            print("A nota deve estar entre 0 e 100")
+    except ValueError:
+        print("Digite uma nota válida!")
 
 media = (nota1 + nota2)/2
 
-if media >= 60 and media <= 100:
+###SISTEMA DE MÉDIA###
+
+if media >= 60:
     print("\nAPROVADO!")
-elif media <= 20:
-    print("\nREPROVADO!")
-elif media < 20 and media >60:
+elif media > 20:
     print("\nRECUPERAÇÃO!")
 else:
-    print("\nERRO INSIRA NOVAMENTE A NOTA")
+    print("\nREPROVADO!")
