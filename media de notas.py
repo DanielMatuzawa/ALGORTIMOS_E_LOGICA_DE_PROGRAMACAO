@@ -21,6 +21,7 @@ while True:
         print("Opção Inválida")
 
 #SEMESTRES#
+
 while True: 
     print("\n=== SEMESTRES ===")
     print("1. semestre")
@@ -60,29 +61,86 @@ while True:
 else:
     print("Opção Inválida")
 
-#DISCIPLINAS#
-while True:
-    print("\n=== SUAS DISCIPLINAS ===")
-    print("\n1.Matemática Aplicada à Computação")
-    print("\n2.Redes de Computadores")
-    print("\n3.Arquitetura e Fundamentos de Computadores")
-    print("\n4.Projeto de Vida")
-    disciplina = input("\nInsira sua disciplina: ")
+   #DISCIPLINAS#
 
-    if disciplina == "1":
-        disciplina = "Matemática Aplicada à Computação"
-        break
-    elif disciplina == "2":
-        disciplina = "Redes de Computadores"
-        break
-    elif disciplina == "3":
-        disciplina = "Arquitetura e Fundamentos de Computadores"
-        break
-    elif disciplina == "4":
-        disciplina = "Projeto de Vida"
-        break
-    else:
-        print("Opção Inválida")
+if semestre == "1. semestre":
+
+    while True:
+        print("\n=== DISCIPLINAS DO PRIMEIRO SEMESTRE ===")
+        print("1. Matemática Aplicada à Computação")
+        print("2. Redes de Computadores")
+        print("3. Arquitetura e Fundamentos de Computadores")
+        print("4. Projeto de Vida")
+
+        disciplina = input("\nInsira sua disciplina: ")
+
+        if disciplina == "1":
+            disciplina = "Matemática Aplicada à Computação"
+            break
+
+        elif disciplina == "2":
+            disciplina = "Redes de Computadores"
+            break
+
+        elif disciplina == "3":
+            disciplina = "Arquitetura e Fundamentos de Computadores"
+            break
+
+        elif disciplina == "4":
+            disciplina = "Projeto de Vida"
+            break
+
+        else:
+            print("Opção Inválida")
+
+elif semestre == "2. semestre":
+
+    while True:
+        print("\n=== DISCIPLINAS DO SEGUNDO SEMESTRE ===")
+        print("1. Algoritmos e Lógica de Programação")
+        print("2. Engenharia de Software")
+        print("3. Produção do Conhecimento Científico, Tecnológico e Disrupção")
+        print("4. Linguagens e Técnicas de Programção")
+
+        disciplina = input("\ninsira sua disciplina")
+
+        if disciplina == "1":
+            disciplina = "Algoritmos e Lógica de Programação"
+            break
+        elif disciplina == "2":
+            disciplina = "Engenharia de Software"
+            break
+        elif disciplina == "3":
+            disciplina = "Produção do Conhecimento Científico, Tecnológico e Disrupção"
+            break
+        elif disciplina == "4":
+            disciplina = "Linguagens e Técnicas de Programção"
+            break
+        else: 
+            print("Opção Inválida")
+
+elif semestre == "3. semestre":
+    
+    while True:
+        print("\n===DISCIPLINAS DO TERCEIRO SEMESTRE")
+        print("1. Análise e Projeto Orientado a Objetos")
+        print("2. Estrutura de Dados")
+        print("3. Mentalidade Criativa e Empreendedora")
+        print("4. Programação Front End")
+
+        disciplina = input("\nInsira sua disciplina")
+
+        if disciplina == "1":
+            disciplina = "Análise e Projeto Orientado a Objetos"
+        elif disciplina == "2":
+            disciplina = "Estrutura de Dados"
+        elif disciplina== "3":
+            disciplina = "Mentalidade Criativa e Empreendedora"
+        elif disciplina == "4":
+            disciplina = "Programação Front End"
+        else: 
+            print("Opção Inválida")
+
 
 ###NOTAS### 
 
@@ -134,7 +192,7 @@ print("Situação  :", situação)
 
 if situação == "APROVADO!":
     print(f"\nParabéns, {nome} Voce passou!")
-elif situação == "RECUPERAÇÃO":
+elif situação == "RECUPERAÇÃO!":
         print(f"\nInfelizmente {nome}, Terá que fazer a recuperação")
 else: 
         print(f"\n{nome}... voce está reprovado, tente novamente quando possível")
