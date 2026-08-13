@@ -1,0 +1,42 @@
+programa {
+  funcao inicio() {
+    inteiro semestre, nota1, nota2
+    real media
+    cadeia nome, curso, disciplina
+
+    escreva("\nNome:")
+    leia(nome)
+    escreva("\nCurso: ")
+    leia(curso)
+    escreva("\nDisciplina: ")
+    leia(disciplina)
+    escreva("\nSemestre: ")
+    leia(semestre)
+    escreva("\nNota 1: ")
+    leia(nota1)
+    escreva("\nNota 2: ")
+    leia(nota2)
+
+    media = (nota1+ nota2)/2
+
+
+    se(media >=60 e media <= 100){
+
+      escreva("\nAPROVADO! sua nota foi: \n" +media+ "")
+    }
+    senao se (media >=20 e media < 60){
+      escreva("\nRECUPERAÇÃO!, sua nota foi: \n" +media+"")
+    }
+    senao se (media < 20){
+      escreva("\nREPROVADO!")
+    }
+
+    senao se (media > 100){
+      escreva("NOTA INCOERENTE, INSIRA NOVAMENTE")
+    }
+    
+      escreva("\n o aluno(a) = "+nome+"\n do curso = "+curso+"\n na disciplina = "+disciplina+"\ntirou a nota de = "+media+"")
+  
+  }
+
+}
