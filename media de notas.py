@@ -122,5 +122,12 @@ print("===================")
 print("=  Nota 1 :", nota1)
 print("=  Nota 2 :", nota2)
 print("=  Média  :", media)
+print("===================")
+if media >= 60:
+    print("APROVADO!")
+elif media > 20:
+    print("RECUPERAÇÃO!")
+else:
+    print("REPROVADO!")
 
 
