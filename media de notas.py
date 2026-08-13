@@ -132,7 +132,12 @@ print("=  Média  :", media)
 print("===================")
 print("Situação  :", situação)
 
-
+if situação == "APROVADO!":
+    print(f"\nParabéns, {nome} Voce passou!")
+elif situação == "RECUPERAÇÃO":
+        print(f"\nInfelizmente {nome}, Terá que fazer a recuperação")
+else: 
+        print(f"\n{nome}... voce está reprovado, tente novamente quando possível")
 
 
 
