@@ -1,2 +1,2 @@
 # ALGORTIMOS_E_LOGICA_DE_PROGRAMACAO
-Aprendendo
+repositório dedicado às entregas da disciplina ALGORTIMOS_E_LOGICA_DE_PROGRAMACAO
