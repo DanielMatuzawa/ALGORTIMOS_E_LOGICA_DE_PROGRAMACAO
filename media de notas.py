@@ -105,10 +105,17 @@ while True:
             print("A nota deve estar entre 0 e 100")
     except ValueError:
         print("Opção válida!")
-
+#media+situação#
+media = (nota1 + nota2)/2
+if media >= 60:
+    situação = "APROVADO!"
+elif media > 20: 
+    situação = "RECUPERAÇÃO!"
+else:
+    situação = "REPROVADO!"
 
 #BOLETIM GERAL#
-media = (nota1 + nota2)/2
+
 print("\nAluno:", nome)
 print("===================")
 print("Curso:", curso)
@@ -123,11 +130,9 @@ print("=  Nota 1 :", nota1)
 print("=  Nota 2 :", nota2)
 print("=  Média  :", media)
 print("===================")
-if media >= 60:
-    print("APROVADO!")
-elif media > 20:
-    print("RECUPERAÇÃO!")
-else:
-    print("REPROVADO!")
+print("Situação  :", situação)
+
+
+
 
 
